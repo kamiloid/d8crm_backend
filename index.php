@@ -11,6 +11,7 @@ if($path_access)
     if($api_access)
     {
         $input = $_REQUEST;
+        $output['resp'] = $class_module->$cmd($input);
     }else{
         $output['message'] = 'No Api module or command defined.';
     }
