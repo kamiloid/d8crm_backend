@@ -13,6 +13,4 @@ $class_module = new $module();
 if(!method_exists($class_module, $cmd))
     return false;
 
-//$output['resp'] = $class_module->$cmd($input);
-
 ?>

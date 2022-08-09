@@ -1,6 +1,6 @@
 <?php
 
-require_once('core/headers.php');
+require_once('core/startup.php');
 $path_access = require_once('core/path_decode.php');
 
 $output = [];
