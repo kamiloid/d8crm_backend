@@ -1,6 +1,6 @@
 <?php
 
-if(str_contains($_SERVER['HTTP_HOST'], 'localhost'))
+if(strpos($_SERVER['HTTP_HOST'], 'localhost') !== false)
 {
 	ini_set('display_errors', '1');
 	ini_set('display_startup_errors', '1');
@@ -18,7 +18,7 @@ $DBCONFIG = [
 	'LOCAL_2' =>[
 		'host' => 'localhost',
 		'user' => 'root',
-		'pass' => '',
+		'pass' => 'root',
 		'port' => '8889',
 		'db' => 'd8crm'
 	]
